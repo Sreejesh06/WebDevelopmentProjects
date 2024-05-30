@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header,
+footer {
+    background-color: steelblue;
+}
+
+body {
+    display: grid;
+    background: linear-gradient( to top, steelblue, aliceblue);
+}
+
+figure {
+    m
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    grid
+}
+
+img {
+    display: ;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
