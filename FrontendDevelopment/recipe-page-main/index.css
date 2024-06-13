@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: inherit;
+}
+
+.main2 {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    min-width: 100px;
+    min-height: 100px;
+    text-overflow: clip;
+    margin: 10%;
+    padding: 10%;
+    border-radius: 20px;
+}
+
+.main {
+    padding: 2% 15% 2% 15%;
+    background-color: hsl(31, 58%, 71%);
+}
+
+img {
+    padding: 10px;
+    margin: 10px;
+    width: 75%;
+    height: 75%;
+    border-radius: 25px;
+    position: relative;
+    left: 10%;
+    right: 10%;
+}
+
+.content1 {}
+
+.content1 p {
+    padding-top: 10px;
+}
+
+.content2 {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.content2 span {
+    color: hsl(332, 51%, 32%);
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+.content2 ol {
+    padding-left: 25px;
+}
+
+.content2 ol li {
+    padding-bottom: 10px;
+}
+
+.content3 h2,
+.content4 h2,
+.content5 h2 {
+    color: hsl(14, 45%, 36%);
+    padding: 10px;
+}
+
+.content3 ol li,
+.content4 ol li {
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.content5 h5 {
+    display: flex;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.nut {
+    color: hsl(14, 45%, 36%);
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

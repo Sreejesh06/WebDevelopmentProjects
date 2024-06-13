@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgb(177, 176, 173);
+}
+
+body {
+    background-color: #000000;
+}
+
+.bar {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: rgb(177, 176, 173);
+    border-radius: 10px;
+}
+
+.menu {
+    margin-left: 4px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header {
+    background-color: #000000;
+}
+
+.logos a {
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.logos a :hover,
+.menu {
+    color: rgb(88, 88, 85);
+}
+
+hr {
+    border: 1px solid rgb(24, 23, 21);
+}
+
+.pic img {
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+
+.one img {
+    float: left;
+}
+
+.two img {
+    float: right;
+}
+
+.main {
+    min-height: 60vh;
+    margin-top: 5vh;
+}
+
+.content h1 {
+    display: inline-block;
+    font-size: 150px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDD1IgMg2SYMp3xWNlTnaTIVBG5jnYHSLeA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Impact;
+    min-height: 30vh;
+}
+
+.content {
+    text-align: center;
+}
+
+.content a {
+    border: 2px solid gold;
+    background-color: gold;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Arial;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#content a:hover {
+    border-color: rgb(221, 191, 21);
+    background-color: rgb(221, 191, 21);
+    color: #1d1c1c;
+}
+
+.content p {
+    font-size: 20px;
+    color: rgb(177, 176, 173);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 1em;
+    font-family: Arial;
+}
+
+a span:hover {
+    color: gold;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+figure img {
+    width: 30vw;
+}

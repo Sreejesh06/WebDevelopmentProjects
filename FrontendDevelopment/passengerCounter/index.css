@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(74, 190, 80);
+    color: #e6dddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(85, 33, 206);
+    color: rgb(234, 237, 245);
+    font-size: 2em;
+    border-radius: 25px;
+    padding: 0.5em;
+    border: rgb(105, 216, 61) 2px solid;
+}
+
+button:hover {
+    background-color: rgb(98, 27, 230);
+    color: aliceblue;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec {
+    border: 5px dashed gold;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#save {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: inherit;
+    color: rgb(117, 66, 0);
+}
+
+span {
+    color: khaki;
+}
