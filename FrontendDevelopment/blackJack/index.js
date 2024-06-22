@@ -1,5 +1,5 @@
-let firstCard = Math.random() * 15;
-let secondCard = Math.random() * 15;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let sum = Math.ceil(firstCard) + Math.ceil(secondCard);
 let hasBlackJack = false;
 let isAlive = true;
@@ -7,8 +7,20 @@ let message = "";
 
 let messageEl = document.getElementById("message");
 let sumEl = document.getElementById("sum");
-let cardsEl = document.querySelector("#cards")
+let cardsEl = document.querySelector("#cards");
 console.log(sum);
+
+
+function getRandomCard() {
+    if ((Math.ceil(Math.random() * 13) + 1) == 1)
+        return 11;
+    else if ((Math.ceil(Math.random() * 13) + 1) == (11 || 12 || 13))
+        return 10;
+
+    else
+        return Math.ceil(Math.random() * 13) + 1;
+
+}
 
 function start() {
 
@@ -28,5 +40,15 @@ function start() {
     }
     messageEl.textContent = message;
 
+
+}
+
+
+function card() {
+    let newCard = getRandomCard();
+    sum += newCard;
+    sum = Math.ceil(sum);
+    console.log(newCard);
+    start();
 
 }

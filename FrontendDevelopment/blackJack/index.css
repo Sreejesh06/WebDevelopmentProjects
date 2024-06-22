@@ -18,7 +18,7 @@ body {
 }
 
 #start,
-.card {
+.newCards {
     padding: 10px 20px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -39,7 +39,7 @@ p {
 }
 
 #start:hover,
-.card:hover {
+.newCards:hover {
     background-color: pink;
 }
 
