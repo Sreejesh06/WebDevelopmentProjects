@@ -1,0 +1,100 @@
+/* App Container */
+
+.main {
+  background-color: #fff2d5;
+  color: #333;
+  border-radius: 15px;
+  padding: 40px 30px;
+  width: 320px;
+  margin: 100px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #004d65; /* Light border for clean edges */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the entire box */
+div:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styles */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 12px;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  margin: 12px 8px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 120px;
+  letter-spacing: 0.5px;
+}
+
+/* Increment/Decrement buttons */
+button:nth-of-type(1), button:nth-of-type(2) {
+  background-color: #27ae60;
+  color: white;
+}
+
+button:nth-of-type(1):hover, button:nth-of-type(2):hover {
+  background-color: #2ecc71;
+  transform: translateY(-4px);
+}
+
+button:nth-of-type(1):active, button:nth-of-type(2):active {
+  background-color: #2ecc71;
+  transform: translateY(2px);
+}
+
+/* Reset button */
+button:nth-of-type(3) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button:nth-of-type(3):hover {
+  background-color: #e67e22;
+  transform: translateY(-4px);
+}
+
+button:nth-of-type(3):active {
+  background-color: #e67e22;
+  transform: translateY(2px);
+}
+
+/* Button container spacing */
+button + button {
+  margin-left: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+  div {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
