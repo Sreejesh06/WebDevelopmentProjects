@@ -1,5 +1,17 @@
-/* App Container */
+/* Light Mode */
+body {
+  background-color: #ffe2d6;
+  color: #583400;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
+/* Dark Mode */
+body.dark-mode {
+  background-color: #00364a;
+  color: #caf0fe;
+}
+
+/* App Container */
 .main {
   background-color: #fff2d5;
   color: #333;
@@ -10,12 +22,12 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 1px solid #004d65; /* Light border for clean edges */
+  border: 1px solid #004d65;
   transition: all 0.3s ease;
 }
 
 /* Hover effect for the entire box */
-div:hover {
+.main:hover {
   transform: scale(1.03);
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
@@ -49,17 +61,20 @@ button {
 }
 
 /* Increment/Decrement buttons */
-button:nth-of-type(1), button:nth-of-type(2) {
+button:nth-of-type(1), 
+button:nth-of-type(2) {
   background-color: #27ae60;
   color: white;
 }
 
-button:nth-of-type(1):hover, button:nth-of-type(2):hover {
+button:nth-of-type(1):hover, 
+button:nth-of-type(2):hover {
   background-color: #2ecc71;
   transform: translateY(-4px);
 }
 
-button:nth-of-type(1):active, button:nth-of-type(2):active {
+button:nth-of-type(1):active, 
+button:nth-of-type(2):active {
   background-color: #2ecc71;
   transform: translateY(2px);
 }
@@ -85,9 +100,21 @@ button + button {
   margin-left: 10px;
 }
 
+/* Dark Mode Toggle Button */
+
+.toggle i {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+/* Toggle Button Hover */
+.toggle:hover {
+  transform: scale(1.1);
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 480px) {
-  div {
+  .main {
     width: 90%;
     padding: 30px 20px;
   }
@@ -98,3 +125,17 @@ button + button {
     font-size: 1rem;
   }
 }
+/* Dark Mode Toggle Button - Positioned at Top Right */
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: inherit; /* Matches theme */
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
