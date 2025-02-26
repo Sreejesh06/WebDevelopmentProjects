@@ -1,0 +1,296 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark gray/near black background */
+  color: #e0e0e0; /* Light gray text */
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: #282828;
+  color: #e0e0e0;
+  padding: 20px;
+  position: fixed; /* Make the sidebar sticky */
+  height: 100vh; /* Ensure the sidebar takes the full height of the viewport */
+  overflow-y: auto; /* Add vertical scrolling if the content overflows */
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.sidebar li:hover {
+  background-color: #3a3a3a;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.selected-sector {
+  background-color: #007BFF; /* Blue background for selected sector */
+}
+
+.sector-with-issues {
+  position: relative;
+  background-color: #f44336; /* Red background for sector with issues */
+}
+
+.issue-indicator {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+}
+
+.sector-good {
+  background-color: #298a29;
+}
+
+.machine-count {
+  font-size: 0.6em;
+  padding-left: 8px;
+  color: #a0aec0;
+}
+
+.header {
+  background-color: #181818;
+  color: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px; /* Adjust for the fixed sidebar */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.user-name {
+  font-size: 1em;
+}
+
+.header-nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.header-nav nav a {
+  margin: 0 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.header-nav nav a:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.last-updated {
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+.main-content {
+  width: 100%;
+  margin-left: 0%; /* Adjust for the fixed sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  background-color: #181818;
+  color: #e90000;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.total-machines {
+  margin-bottom: 20px;
+}
+
+.total-machines h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.total-number {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.data-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.data-card {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.data-card:hover {
+  transform: scale(1.05);
+}
+
+.data-card .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.blue-icon {
+  color: #007BFF;
+}
+
+.red-icon {
+  color: #f44336;
+}
+
+.purple-icon {
+  color: #9c27b0;
+}
+
+.green-icon {
+  color: #4caf50;
+}
+
+.machine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.machine-card {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.machine-card:hover {
+  transform: scale(1.05);
+}
+
+.machine-card.error {
+  border: 2px solid red;
+}
+
+.machine-card.good {
+  border: 2px solid green;
+}
+
+.machine-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.machine-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.data-item .icon {
+  margin-right: 10px;
+}
+
+.alert-icon {
+  color: red;
+  margin-left: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
