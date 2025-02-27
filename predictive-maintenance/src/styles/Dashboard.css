@@ -9,6 +9,74 @@
   position: relative;
 }
 
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #202020;
+  color: #fff;
+}
+
+.company-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.user-icon {
+  margin-right: 8px;
+}
+
+.user-name {
+  font-size: 1em;
+}
+
+.search-icon {
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.logout-button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-right: 20px;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.last-updated {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-size: 0.9em;
+  color: #a0aec0;
+  margin-top: 10px;
+}
+
 .total-machines {
   text-align: center;
   margin-bottom: 20px;
@@ -53,22 +121,18 @@
 
 .blue-icon {
   color: #007BFF;
-  font-size: 2rem;
 }
 
 .red-icon {
   color: #FF0000;
-  font-size: 2rem;
 }
 
 .purple-icon {
   color: #800080;
-  font-size: 2rem;
 }
 
 .green-icon {
   color: #008000;
-  font-size: 2rem;
 }
 
 .orange-icon {
@@ -155,27 +219,12 @@
   padding-left: 5px;
 }
 
-.last-updated {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1em;
-  color: #a0aec0;
-}
-
 /* Newly Added */
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0.3; }
   100% { opacity: 1; }
 }
-
-  .rul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-  }
 
 .blink {
   animation: blink 1s infinite alternate;
@@ -188,7 +237,7 @@
 
 .yellow-icon {
   color: rgb(173, 173, 13);
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 .alert-icon {
